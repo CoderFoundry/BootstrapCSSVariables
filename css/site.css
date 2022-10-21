@@ -1,5 +1,5 @@
 :root{
-    --cf-primary-color: #2B404F;
+    --cf-primary-color: hsl(205, 30%, 24%);
     --cf-secondary-hsl-color: hsl(29, 100%, 62%);
     --cf-secondary-hsl-color-dark: hsl(29, 100%, 52%);
     --cf-secondary-hsl-color-darkest: hsl(29, 100%, 42%);
@@ -21,6 +21,13 @@ html,body{
 body{
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cf-light-color);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
 }
 
 .content{
@@ -33,9 +40,33 @@ footer{
 }
 
 .footer{
-    background: var(--cf-primary-color);
+    background: var(--cf-light-color);
     color: var(--cf-light-color);
 }
+
+.footer-cta {
+    border-radius: 10px;
+    background-color: var(--cf-dark-color);
+    width: 75%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+  }
+
+.footer-cta-bg {
+    background: linear-gradient(
+      to bottom,
+      var(--cf-light-color) 0%,
+      var(--cf-light-color) 50%,
+      var(--cf-primary-color) 50%,
+      var(--cf-primary-color) 100%
+    );
+  }
+
+  .footer-main{
+    background-color: var(--cf-primary-color);
+  }
 
 .socialIcons{
     color: var(--cf-light-color);
