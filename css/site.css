@@ -1,5 +1,5 @@
 :root{
-    --cf-primary-color: #001e43;
+    --cf-primary-color: #2B404F;
     --cf-secondary-hsl-color: hsl(29, 100%, 62%);
     --cf-secondary-hsl-color-dark: hsl(29, 100%, 52%);
     --cf-secondary-hsl-color-darkest: hsl(29, 100%, 42%);
@@ -7,7 +7,7 @@
     --cf-secondary-color-rgb: rgb(255, 155, 61);
     
     --cf-dark-color: #1b1b1b;
-    --cf-light-color: #ebebeb;
+    --cf-light-color: rgb(235, 235, 235);
     --cf-light-grey: #d9d9d9;
 
     --cf-secondary-glow: rgba(255, 153, 59, .6);
@@ -25,7 +25,7 @@ body{
 
 .content{
     flex: 1 0 auto;
-    margin-top: 4.75rem;
+    margin-top:2rem;
 }
 
 footer{
@@ -33,9 +33,20 @@ footer{
 }
 
 .footer{
-    background: var(--ms-primary-color);
-    color: var(--ms-light-color);
+    background: var(--cf-primary-color);
+    color: var(--cf-light-color);
 }
+
+.socialIcons{
+    color: var(--cf-light-color);
+    font-size: 2rem;
+    padding-left: .5rem;
+}
+
+.socialIcons:hover{
+    color: var(--cf-secondary-color-rgb);
+}
+
 
 .btn-cf-primary {
     --bs-btn-font-weight: 600;
@@ -52,7 +63,7 @@ footer{
     --bs-btn-active-border-color: var(--cf-secondary-hsl-color-darkest);
   }
 
-  .accordian-cf{
+.accordian-cf{
     --bs-accordion-color: var(--cf-dark-color);
     --bs-accordion-bg: white;
     --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease; 
@@ -78,29 +89,41 @@ footer{
     --bs-accordion-active-bg: var(--cf-secondary-hsl-color); 
     
   }
-  
 
-  .accordion-cf {
-    --bs-accordion-color: #212529;
-    --bs-accordion-bg: #fff;
-    --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
-    --bs-accordion-border-color: var(--bs-border-color);
-    --bs-accordion-border-width: 1px;
-    --bs-accordion-border-radius: 0.375rem;
-    --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
-    --bs-accordion-btn-padding-x: 1.25rem;
-    --bs-accordion-btn-padding-y: 1rem;
-    --bs-accordion-btn-color: #212529;
-    --bs-accordion-btn-bg: var(--bs-accordion-bg);
-    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    --bs-accordion-btn-icon-width: 1.25rem;
-    --bs-accordion-btn-icon-transform: rotate(-180deg);
-    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    --bs-accordion-btn-focus-border-color: #86b7fe;
-    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-    --bs-accordion-body-padding-x: 1.25rem;
-    --bs-accordion-body-padding-y: 1rem;
-    --bs-accordion-active-color: #0c63e4;
-    --bs-accordion-active-bg: #e7f1ff;
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) rgba(255, 153, 59, .6);
 }
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(235, 235, 235, 0.55);
+    --bs-navbar-hover-color: rgba(235, 235, 235, 0.7);
+    --bs-navbar-disabled-color: rgba(235, 235,235, 0.3);
+    --bs-navbar-active-color: rgba(235,235, 235, 0.9);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(235, 235, 235, 0.9);
+    --bs-navbar-brand-hover-color: var(--cf-secondary-color-rgb);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 155, 61, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-border-color: var(--cf-navbar-toggler-color);
+    --bs-navbar-toggler-border-radius: 0.375rem;
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+    background-color: var(--cf-primary-color);
+}  
+

@@ -10,45 +10,43 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
   <link rel="stylesheet" href="/css/site.css" />
 </head>
 
 <body>
   <header>
-       <nav class="navbar navbar-expand-lg  bg-light bg-gradient navbar-light">
-           <div class="container-fluid">
-               <a class="navbar-brand" href="#"><img src="/img/cf_brand.png" class="rounded" height="50"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                   aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                       <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#">Home</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#">Some Link</a>
-                       </li>                                             
-                   </ul>                   
-               </div>
-           </div>
-       </nav>
-  </header>
-  <main>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col">
-          <button class="btn btn-primary">Custom Button</button>
-          
-        </div>
-        <div class="col">
-          <button class="btn btn-cf-primary">Custom Button</button>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img src="/img/cf_brand.png" class="rounded me-1" height="50">Bootstrap 5.2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://learn.coderfoundry.com" target="_blank">Learn</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="row mt-2">
+    </nav>
+  </header>
+  <main class="content">
+    <div class="container">
+      <H1>CSS Variables</H1>
+      <p class="lead py-2">Use Bootstrap’s CSS custom properties for fast and forward-looking design and development. This project shows
+        you how to theme the nav, button and accordian. Inspect our style sheet and review .btn-cf-primary, .navbar, .navbar-toggler:focus, .accordian-cf classes</p>
+
+      <div class="row row-cols-1 row-cols-md-2 mt-2">
         <div class="col">
+          <button class="btn btn-primary">Primary Button</button>
           <h2>Bootstrap Accoridian</h2>
           <div class="accordion" id="accordionbs">
             <div class="accordion-item">
@@ -120,6 +118,7 @@
           </div>
         </div>
         <div class="col">
+          <button class="btn btn-cf-primary">Custom Button</button>
           <h2>Custom Accordian</h2>
           <div class="accordian-cf" id="accordionExample">
             <div class="accordion-item">
@@ -191,10 +190,25 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>
   </main>
-  <footer>
-    
+  <footer class="footer container-fluid py-3">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-3 align-items-center">
+        <div class="col text-center text-lg-start">
+          &copy;2022 Coder Foundry
+        </div>
+        <div class="col text-center">
+          <a href="https://learn.coderfoundry.com" target="_blank"><img src="/img/CF_Logo_White_Orange.png" height="75" /></a>
+        </div>
+        <div class="col text-center text-lg-end">
+          <a href="https://twitter.com/CoderFoundry" target="_blank"><i class="bi bi-twitter socialIcons"></i></a>
+          <a href="https://www.youtube.com/c/CoderFoundryBootcamp" target="_blank"><i
+              class="bi bi-youtube socialIcons"></i></a>
+          <a href="https://github.com/CoderFoundry" target="_blank"><i class="bi bi-github socialIcons"></i></a>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
