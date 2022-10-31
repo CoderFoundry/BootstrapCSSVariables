@@ -64,7 +64,16 @@ footer{
 }
 
 .socialIcons:hover{
-    color: var(--cf-secondary-color-rgb);
+    color: var(--cf-secondary-hsl-color);
+}
+
+.ytlink{
+    color: var(--cf-light-color);
+    text-decoration: none;
+}
+
+.ytlink:hover{
+    color: var(--cf-secondary-hsl-color);
 }
 
 
